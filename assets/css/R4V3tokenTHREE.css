@@ -1,0 +1,19 @@
+#animation-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.sidemenu {
+    position: fixed;
+    top: 56px; /* Ajustez cette valeur selon la hauteur de votre navbar */
+    left: 0;
+    height: calc(100vh - 56px); /* Soustrayez la hauteur de la navbar */
+    width: 33.33%; /* Occupe un tiers de la largeur */
+}
+
+.main-content {
+    margin-left: 33.33%; /* Doit correspondre à la largeur du sidemenu */
+    padding: 20px;
+    width: 66.67%; /* Occupe les deux tiers restants */
+}

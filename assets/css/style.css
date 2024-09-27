@@ -1,0 +1,19 @@
+/* C:\laragon\www\Glitch\assets\css\style.css */
+
+body {
+    background-color: var(--background-color); /* Couleur par défaut */
+    color: var(--text-color);              /* Couleur du texte par défaut */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour un effet smoother */
+  }
+  
+  /* Styles pour le mode sombre */
+  .dark-mode {
+    --background-color: #000; /* Couleur de fond sombre */
+    --text-color: #fff;        /* Couleur du texte en mode sombre */
+  }
+  
+  /* Styles pour le mode clair */
+  .light-mode {
+    --background-color: #fff; /* Couleur de fond clair */
+    --text-color: #000;        /* Couleur du texte en mode clair */
+  }

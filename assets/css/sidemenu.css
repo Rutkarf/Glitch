@@ -1,0 +1,67 @@
+.sidemenu {
+    width: 30%;
+    
+    position: fixed;
+    top: 50%;
+    left: 20;
+    transform: translateY(-50%);
+    background-color: #333;
+    transition: all 0.3s;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidemenu-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidemenu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidemenu-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidemenu-link:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.sidemenu-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Styles pour le mode sombre/clair */
+.dark-mode .sidemenu {
+    background-color: #000;
+}
+
+.light-mode .sidemenu {
+    background-color: #f8f9fa;
+}
+
+.light-mode .sidemenu-link {
+    color: #333;
+}
+
+.light-mode .sidemenu-link:hover {
+    background-color: #0f0;
+    color: #fff;
+}
+
+/* Ajustement du contenu principal */
+.main-content {
+    margin-left: 33.33%; /* Doit correspondre à la largeur du sidemenu */
+    padding: 20px;
+}
